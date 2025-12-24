@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>飞机大战</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="game-canvas" width="480" height="640"></canvas>
+    
+    <div id="ui-overlay">
+      <div id="score">得分: 0</div>
+      <div id="level">子弹等级: 1</div>
+    </div>
+
+    <div id="game-over">
+      <h2>游戏结束！</h2>
+      <p id="final-score">得分: 0</p>
+      <button id="restart-btn">重新开始</button>
+    </div>
+
+    <div id="start-screen">
+      <h1>✈️ 飞机大战 Pro</h1>
+      <button id="start-btn">开始游戏</button>
+      <div class="instructions">
+        ← → 控制飞机 | 自动射击<br>
+        击落普通敌机：+10分<br>
+        击落<strong>金色奖励敌机</strong>：随机获得子弹升级！
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/game.js"></script>
+</body>
+</html>
